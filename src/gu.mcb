@@ -86,7 +86,7 @@ dir zzz {
 
 	function get_hexes {
 		REPEAT (0, 15) as i {
-			$data modify storage gu:temp 0 set from storage gu:main hex_chars[$(<%i.toString(16)%>)]
+			$data modify storage aj:uuid temp.<%i.toString(16)%> set from storage aj:uuid main.hex_chars[$(<%i.toString(16)%>)]
 		}
 	}
 
